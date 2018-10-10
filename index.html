@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class=container>
+        <div class=row>
+            <div class=col-1></div>
+            <div class=col-10>
+                <div class="jumbotron border rounded border-dark" style="background-color: #ce5801; color: white;">
+                    <h1 class="display-4 text-center"><strong><i class="fa fa-hourglass-start" aria-hidden="true"></i><i
+                                class="fa fa-hourglass-half" aria-hidden="true"></i><i class="fa fa-hourglass-end"></i>
+                            Trick-or-Treat Trivia!</strong></h1>
+                </div>
+                <div class=col-1></div>
+            </div>
+        </div>
+        <div class=row>
+            <div class=col-1></div>
+            <div class=col-10>
+                <div id="wrapper">
+                    <div id="display" class="border rounded border-dark" style="background-color: #ce5801; color: white;">00:00</div>
+                </div>
+                <div id="button-holder"><button type="button" class="btn btn-lg start border-dark" style="background-color: #ce5801; color: white;"><strong>Start</strong></button></div>
+                <div class="card border border-dark">
+                    <h5 class="card-header" style="background-color: #ce5801; color: white;"><strong><i class="em em-jack_o_lantern"></i>
+                            Before people used pumpkins, what were Jack O' Lanterns made out of?</strong></h5>
+
+                    <div class="form-check" style="margin-left: 5px;">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1"
+                                checked>
+                            <!-- correct answer -->
+                            Turnips
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" style="margin-left: 5px;">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Potatoes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" style="margin-left: 5px;">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                            Carrots
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" style="margin-left: 5px;">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option4">
+                            Onions
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=row style="margin-top: 10px;">
+            <div class=col-1></div>
+            <div class=col-10>
+                <div class="card border border-dark">
+                    <h5 class="card-header" style="background-color: #ce5801; color: white;"><strong><i class="em em-jack_o_lantern"></i>
+                            How do you kill a zombie?</strong></h5>
+
+                    <div class="form-check" style="margin-left: 5px;">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1"
+                                checked>
+                            Feed it cold custard
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" style="margin-left: 5px;">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Cut off its head or destroy its brain
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" style="margin-left: 5px;">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                            Make it watch old black and white movies until it dies of boredom
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" style="margin-left: 5px;">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option4">
+                            It's impossible - try to make friends with it instead
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=row style="margin-top: 10px;">
+            <div class=col-1></div>
+            <div class=col-10>
+                <div class="card border border-dark">
+                    <h5 class="card-header" style="background-color: #ce5801; color: white;"><strong><i class="em em-jack_o_lantern"></i>
+                            Which of these would be most useful if a werewolf attacked you?</strong></h5>
+
+                    <div class="form-check" style="margin-left: 5px;">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1"
+                                checked>
+                            A big stick
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" style="margin-left: 5px;">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                            A gun with silver bullets
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" style="margin-left: 5px;">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                            A cardboard box to hide in
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" style="margin-left: 5px;">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option4">
+                            A 10 second head start to run away
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=row style="margin-top: 10px;">
+            <div class=col-1></div>
+            <div class=col-10>
+                <div class="card border border-dark">
+                    <h5 class="card-header" style="background-color: #ce5801; color: white;"><strong><i class="em em-jack_o_lantern"></i>
+                            What do you call a fear of Halloween?</strong></h5>
+
+                    <div class="form-check" style="margin-left: 5px;">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1"
+                                checked>
+                            Spooky-itis
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" style="margin-left: 5px;">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Hauntington's Disease
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" style="margin-left: 5px;">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                            Fiber-my-algae
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" style="margin-left: 5px;">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="option4">
+                            Samhainophobia
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=row style="margin-top: 10px;">
+            <div class=col-5></div>
+            <div class=col-1>
+                <button type="button" class="btn btn-lg border border-rounded border-dark" style="background-color: #ce5801; color: white;"><strong>Submit</strong></button>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            window.onload = function () {
+                $("#start").on("click", stopwatch.start);
+            };
+            //  Variable that will hold our setInterval that runs the timer
+            var intervalId;
+
+            // prevents the clock from being sped up unnecessarily
+            var clockRunning = false;
+
+            // Our timer object
+            var timer = {
+
+                time: 0,
+
+                reset: function () {
+
+                    timer.time = 0;
+                    timer.lap = 1;
+
+                    // DONE: Change the "display" div to "00:00."
+                    $("#display").text("00:00");
+
+                    // DONE: Empty the "laps" div.
+                    $("#laps").text("");
+                },
+                start: function () {
+
+                    // DONE: Use setInterval to start the count here and set the clock to running.
+                    if (!clockRunning) {
+                        intervalId = setInterval(timer.count, 1000);
+                        clockRunning = true;
+                    }
+                },
+                stop: function () {
+
+                    // DONE: Use clearInterval to stop the count here and set the clock to not be running.
+                    clearInterval(intervalId);
+                    clockRunning = false;
+                },
+                count: function () {
+
+                    // DONE: increment time by 1, remember we cant use "this" here.
+                    timer.time++;
+
+                    // DONE: Get the current time, pass that into the timer.timeConverter function,
+                    //       and save the result in a variable.
+                    var converted = timer.timeConverter(timer.time);
+                    console.log(converted);
+
+                    // DONE: Use the variable we just created to show the converted time in the "display" div.
+                    $("#display").text(converted);
+                },
+                timeConverter: function (t) {
+
+                    var minutes = Math.floor(t / 60);
+                    var seconds = t - (minutes * 60);
+
+                    if (seconds < 10) {
+                        seconds = "0" + seconds;
+                    }
+
+                    if (minutes === 0) {
+                        minutes = "00";
+                    }
+                    else if (minutes < 10) {
+                        minutes = "0" + minutes;
+                    }
+
+                    return minutes + ":" + seconds;
+                }
+            };
+        </script>
+</body>
+
+</html>
